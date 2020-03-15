@@ -13,6 +13,8 @@ class DatePopupViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dataPicker: UIDatePicker!
     @IBOutlet weak var saveButton: UIButton!
+    //Create Function type
+    var onSave: ((_ data: String) -> ())?
     var showTimePicker: Bool = false
     
     var formattedDate: String {
@@ -42,6 +44,11 @@ class DatePopupViewController: UIViewController {
     @IBAction func saveDataAction(_ sender: UIButton) {
         NotificationCenter.default.post(name: .saveDateTime, object: self)
         
+        if showTimePicker {
+            onSave?(formattedTime)
+        }else {
+            onSave?(formattedDate)
+        }
         print("printing after post that means notification works synchronously")
         dismiss(animated: true)
     }

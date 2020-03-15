@@ -115,8 +115,10 @@
 			children = (
 				77D02C82241E495D00114E15 /* AppDelegates */,
 				77D02C83241E496A00114E15 /* Controllers */,
-				77D02C81241E495500114E15 /* Views */,
 				777243AE241D51CC0077ADE8 /* Assets.xcassets */,
+				777243A8241D51C60077ADE8 /* Main.storyboard */,
+				777243DA241D57840077ADE8 /* SelectTimeViewController.storyboard */,
+				777243D7241D56FA0077ADE8 /* DatePopupViewController.storyboard */,
 				777243B0241D51CC0077ADE8 /* LaunchScreen.storyboard */,
 				777243B3241D51CC0077ADE8 /* Info.plist */,
 				777243AB241D51C60077ADE8 /* ReusablePopup.xcdatamodeld */,
@@ -141,16 +143,6 @@
 				777243C9241D51CC0077ADE8 /* Info.plist */,
 			);
 			path = ReusablePopupUITests;
-			sourceTree = "<group>";
-		};
-		77D02C81241E495500114E15 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				777243A8241D51C60077ADE8 /* Main.storyboard */,
-				777243D7241D56FA0077ADE8 /* DatePopupViewController.storyboard */,
-				777243DA241D57840077ADE8 /* SelectTimeViewController.storyboard */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		77D02C82241E495D00114E15 /* AppDelegates */ = {
