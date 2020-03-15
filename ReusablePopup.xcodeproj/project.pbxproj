@@ -17,6 +17,11 @@
 		777243B2241D51CC0077ADE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777243B0241D51CC0077ADE8 /* LaunchScreen.storyboard */; };
 		777243BD241D51CC0077ADE8 /* ReusablePopupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777243BC241D51CC0077ADE8 /* ReusablePopupTests.swift */; };
 		777243C8241D51CC0077ADE8 /* ReusablePopupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777243C7241D51CC0077ADE8 /* ReusablePopupUITests.swift */; };
+		777243D6241D53A80077ADE8 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777243D5241D53A80077ADE8 /* DatePopupViewController.swift */; };
+		777243D9241D56FA0077ADE8 /* DatePopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777243D7241D56FA0077ADE8 /* DatePopupViewController.storyboard */; };
+		777243DB241D57840077ADE8 /* SelectTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777243DA241D57840077ADE8 /* SelectTimeViewController.storyboard */; };
+		777243DD241D57BF0077ADE8 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777243DC241D57BF0077ADE8 /* SelectTimeViewController.swift */; };
+		77D02C80241DF3D300114E15 /* NotficationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D02C7F241DF3D300114E15 /* NotficationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		777243C3241D51CC0077ADE8 /* ReusablePopupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusablePopupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		777243C7241D51CC0077ADE8 /* ReusablePopupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePopupUITests.swift; sourceTree = "<group>"; };
 		777243C9241D51CC0077ADE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		777243D5241D53A80077ADE8 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
+		777243D8241D56FA0077ADE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReusablePopup/Base.lproj/DatePopupViewController.storyboard; sourceTree = "<group>"; };
+		777243DA241D57840077ADE8 /* SelectTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTimeViewController.storyboard; sourceTree = "<group>"; };
+		777243DC241D57BF0077ADE8 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
+		77D02C7F241DF3D300114E15 /* NotficationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotficationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +113,14 @@
 		7772439F241D51C60077ADE8 /* ReusablePopup */ = {
 			isa = PBXGroup;
 			children = (
-				777243A0241D51C60077ADE8 /* AppDelegate.swift */,
-				777243A2241D51C60077ADE8 /* SceneDelegate.swift */,
-				777243A4241D51C60077ADE8 /* FirstViewController.swift */,
-				777243A6241D51C60077ADE8 /* SecondViewController.swift */,
-				777243A8241D51C60077ADE8 /* Main.storyboard */,
+				77D02C82241E495D00114E15 /* AppDelegates */,
+				77D02C83241E496A00114E15 /* Controllers */,
+				77D02C81241E495500114E15 /* Views */,
 				777243AE241D51CC0077ADE8 /* Assets.xcassets */,
 				777243B0241D51CC0077ADE8 /* LaunchScreen.storyboard */,
 				777243B3241D51CC0077ADE8 /* Info.plist */,
 				777243AB241D51C60077ADE8 /* ReusablePopup.xcdatamodeld */,
+				77D02C7F241DF3D300114E15 /* NotficationNameExtension.swift */,
 			);
 			path = ReusablePopup;
 			sourceTree = "<group>";
@@ -132,6 +141,36 @@
 				777243C9241D51CC0077ADE8 /* Info.plist */,
 			);
 			path = ReusablePopupUITests;
+			sourceTree = "<group>";
+		};
+		77D02C81241E495500114E15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				777243A8241D51C60077ADE8 /* Main.storyboard */,
+				777243D7241D56FA0077ADE8 /* DatePopupViewController.storyboard */,
+				777243DA241D57840077ADE8 /* SelectTimeViewController.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77D02C82241E495D00114E15 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				777243A0241D51C60077ADE8 /* AppDelegate.swift */,
+				777243A2241D51C60077ADE8 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		77D02C83241E496A00114E15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777243A4241D51C60077ADE8 /* FirstViewController.swift */,
+				777243A6241D51C60077ADE8 /* SecondViewController.swift */,
+				777243D5241D53A80077ADE8 /* DatePopupViewController.swift */,
+				777243DC241D57BF0077ADE8 /* SelectTimeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				777243B2241D51CC0077ADE8 /* LaunchScreen.storyboard in Resources */,
+				777243DB241D57840077ADE8 /* SelectTimeViewController.storyboard in Resources */,
 				777243AF241D51CC0077ADE8 /* Assets.xcassets in Resources */,
+				777243D9241D56FA0077ADE8 /* DatePopupViewController.storyboard in Resources */,
 				777243AA241D51C60077ADE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +311,9 @@
 				777243A1241D51C60077ADE8 /* AppDelegate.swift in Sources */,
 				777243AD241D51C60077ADE8 /* ReusablePopup.xcdatamodeld in Sources */,
 				777243A3241D51C60077ADE8 /* SceneDelegate.swift in Sources */,
+				77D02C80241DF3D300114E15 /* NotficationNameExtension.swift in Sources */,
+				777243DD241D57BF0077ADE8 /* SelectTimeViewController.swift in Sources */,
+				777243D6241D53A80077ADE8 /* DatePopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +363,14 @@
 				777243B1241D51CC0077ADE8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		777243D7241D56FA0077ADE8 /* DatePopupViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				777243D8241D56FA0077ADE8 /* Base */,
+			);
+			name = DatePopupViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
